@@ -1,2 +1,155 @@
-# ParlaChore
-Family chore management application
+![ParlaChore](images/logo.png)
+
+# ⚙️ Tech Stack & Control Flow
+
+## Tech Stack Overview
+- **Backend**
+    - Spring Boot controllers expose RESTful endpoints for both **full-page shells** (SEO-friendly) and **AJAX partials** (dynamic overlays).
+    - Layered architecture: DTOs, entities, repositories, and services with Lombok for reduced boilerplate.
+    - Transparent debug logging and lifecycle checklists for collaborative troubleshooting.
+- **Frontend**
+    - Overlay swapper architecture with fade-in transitions for playful, emotionally resonant UX.
+    - Progressive enhancement ensures crawlability even if JavaScript fails.
+    - Utility classes and maintainable JS/CSS patterns keep the codebase future-proof.
+- **SEO & Accessibility**
+    - Controller mappings ensure crawlers see complete shells.
+    - Semantic HTML and ARIA roles for inclusive design.
+    - Declarative UI structure supports both human readability and machine parsing.
+
+## 🔄 Request → Response → Swapper → Animation Lifecycle
+
+| Step              | Trigger/Event                  | Backend Response                  | Frontend Action                          | Outcome                          |
+|-------------------|--------------------------------|-----------------------------------|------------------------------------------|----------------------------------|
+| **1. Initial Load** | Browser requests route         | Full HTML shell (SEO tags, metadata, placeholders) | Render shell, preload assets              | Crawlable, complete page         |
+| **2. User Action**  | Click / navigation / overlay   | AJAX request sent to `/partials/` | Overlay swapper listens and intercepts    | Request lifecycle begins         |
+| **3. Partial Fetch**| AJAX request received          | Lean fragment (no scaffolding)    | Swapper replaces target overlay           | Content updated dynamically      |
+| **4. Transition**   | Fragment injected              | —                                 | Fade-in animation applied                 | Playful, emotionally resonant UX |
+| **5. Debug Log**    | Lifecycle events (req/res/render/anim) | Transparent logs written to `/logs/` | Debug flags toggle visibility             | Collaborative troubleshooting    |
+| **6. Fallbacks**    | JS disabled or error           | Full shell served                 | Browser displays complete page            | Resilient, SEO-friendly recovery |
+
+---
+
+## 🧱 Architecture & Design
+
+### Domain Modeling
+- `Account` entity with secure hashed credentials and verification flow.
+- `User` entity with `PARENT` and `CHILD` roles (via `Role` enum).
+- Planned: `Chore`, `ChoreTemplate`, `ChoreInstance`, `WeeklySchedule`.
+
+### Config-Driven Setup
+- `application.yml` for environment-specific settings.
+- Externalized Kafka, DB, and service wiring.
+
+### Secure Account Flow
+- Email verification, hashed passwords, role-based access.
+- Planned: Invite tokens, parent sign-off, and audit logging.
+
+---
+
+## 🧪 Testing & DevOps
+- **Spring Boot Test** — Unit and integration testing.
+- **Maven + Surefire Plugin** — Build and test automation.
+- **Docker-Ready** — Modular services designed for containerization.
+- **Kubernetes-Ready** — Stateless services, external config, and health endpoints planned.
+
+---
+
+## 🎨 Theme Families (Condensed)
+ParlaChore supports multiple theme families for playful customization:
+- **Classic** (default) — muted blues and grays.
+- **Undersea** — aqua, teal, coral.
+- **Outer Space** — midnight blue, cosmic purple.
+- **Airport, Build Site, Race Track, Stables, Fairy Forest, Dragon Cliffs, Cat’s Den, Dog Pen** — each with unique palettes and mascot-driven backgrounds.
+
+Themes are stored under `/resources/static/images/themes/` with avatars and backgrounds organized by family.
+
+---
+
+## 📌 Note
+This documentation is released publicly to demonstrate **system design and architectural thinking**.  
+The codebase itself remains private, but the principles here reflect production-ready practices.
+
+---
+
+For detailed documentation, see:
+- [Architecture](docs/ARCHITECTURE.md)
+- [Security](docs/SECURITY.md)
+- [Deployment](docs/DEPLOYMENT.md)
+- [Themes](docs/THEMES.md)
+- [Utilities](docs/UTILS.md)
+
+---
+
+## 🏆 Skills Demonstrated
+
+ParlaChore showcases a blend of **technical engineering** and **creative UX design**.  
+Key skills highlighted through this project include:
+
+### Backend & Architecture
+- **Spring Boot / MVC** — Designed layered architecture with controllers, services, repositories, DTOs, and entities.
+- **RESTful API Design** — Exposed endpoints for both full-page shells and AJAX partials.
+- **Domain Modeling** — Structured entities (`Account`, `Chore`, `ParlaPal`, `Reward`) with role-based access via enums.
+
+### Security & Reliability
+- **Authentication & Authorization** — Role-based access control (`PARENT`, `CHILD`), hashed credentials, email verification.
+- **Input Sanitization** — Prevented XSS with `HtmlSanitizer` and secure token flows with `TokenUtils`.
+- **Error Handling** — Global error controller and mascot-driven recovery for safe, user-friendly fallback.
+
+### Frontend & UX
+- **Progressive Enhancement** — Overlay swapper with fade-in transitions, ensuring crawlability and accessibility.
+- **Playful UX Design** — Mascot-driven illustrations, theme families, and emotionally resonant onboarding.
+- **Accessibility** — Semantic HTML, ARIA roles, and declarative UI structure.
+
+### DevOps & Deployment
+- **AWS Hosting** — Domain served via Route 53, assets via S3 + CloudFront, monitoring with CloudWatch.
+- **Containerization** — Docker-ready services, Kubernetes (EKS) readiness with externalized config and health endpoints.
+- **CI/CD** — Maven builds, Surefire testing, GitHub Actions/Jenkins pipeline integration.
+
+### Utilities & Tooling
+- **Reusable Utility Classes** — `HtmlSanitizer`, `TokenUtils`, `LogUtils`, `DateTimeUtils`, `JsonUtils`.
+- **Debugging & Transparency** — Lifecycle logging, debug flags, and developer handoff checklists.
+- **Performance Measurement** — Lightweight `Timer` utility for profiling and optimization.
+
+### Creative & Collaborative
+- **Theme Families** — Customizable backgrounds and mascots for immersive, family-friendly UX.
+- **Documentation** — High-level overview in `README.md` with deeper technical docs (`ARCHITECTURE.md`, `SECURITY.md`, `DEPLOYMENT.md`, `UTILS.md`, `THEMES.md`).
+- **Collaboration** — Transparent logging and lifecycle checklists designed for team handoffs.
+
+---
+
+## 📌 Portfolio Note
+
+This repository is designed to demonstrate **system design, security awareness, deployment readiness, and creative UX thinking**.  
+While the codebase remains private, the documentation reflects production-ready practices and résumé-level skills.
+
+
+---
+
+## 👋 About Me
+![ParlaChore](images/samHeadSmall.png)
+
+Hi, I’m **Sam Parlatore** — a versatile backend engineer, systems architect, and creative educator.  
+I founded **ParlAquatics LLC** and am now channeling that experience into **ParlaChore**, a family-focused chore and relationship app.
+
+### What I Bring
+- **Technical Depth**: Skilled in frontend/backend debugging, progressive enhancement, accessibility, and maintainable JS/CSS patterns.
+- **Architectural Clarity**: Experienced in RESTful API design, layered Spring Boot architecture, and pragmatic utility libraries.
+- **Creative UX**: Passionate about playful, mascot-driven design that balances technical purity with emotional resonance.
+- **Collaborative Mindset**: Transparent logging, lifecycle checklists, and iterative refactoring for team-friendly development.
+
+### Connect With Me
+- LinkedIn: [linkedin.com/in/projectswithsam](https://linkedin.com/in/projectswithsam)
+- GitHub: [github.com/samparlatore](https://github.com/samparlatore)
+
+---
+
+## 📌 Portfolio Note
+
+This repository is designed to demonstrate **system design, security awareness, deployment readiness, and creative UX thinking**.  
+While the codebase remains private, the documentation reflects production-ready practices and résumé-level skills.
+
+---
+## 👥 Author & Links
+Created by [Sam Parlatore](https://linkedin.com/in/projectswithsam)  
+GitHub: [github.com/samparlatore](https://github.com/samparlatore)
+---
