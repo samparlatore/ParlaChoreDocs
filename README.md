@@ -1,7 +1,33 @@
 ![ParlaChore](images/logo.png)
 
-ParlaChore is a **family-focused chore and relationship app** designed to make household management playful, collaborative, and emotionally resonant.  
-It blends **scalable backend architecture** with **mascot-driven UX** to transform chores into shared experiences.
+ParlaChore is a **family chore and relationship app** that turns everyday routines into joyful, collaborative experiences.  
+It combines **scalable backend engineering** with a **clean, mascot‑driven interface** so kids learn intuitive UI conventions, parents stay in control, and families celebrate progress together.
+
+---
+
+## ❓ Why ParlaChore?
+
+- **Clean, intuitive UI** — Helps younger children learn standard computer/app conventions while keeping older kids frustration‑free with a streamlined flow.
+- **Focus on family, not finance** — Rewards are tracked with *ParlaBucks*, a fun, symbolic system. Parents decide how those translate into real‑world recognition (screen time, outings, allowance).
+- **Playful engagement** — Mascot‑driven themes, helpful tips, and a constructive feedback system turns chores into shared experiences rather than dull tasks.
+- **Technical rigor** — Built with scalable backend architecture, secure account flows, and deployment readiness on AWS/Kubernetes.
+- **Portfolio clarity** — Documentation demonstrates system design, security awareness, and DevOps practices alongside creative UX.
+
+---
+
+### Simple, Clean, Intuitive UI
+- Designed to help **younger children** learn typical computer and app conventions in a safe, approachable way.
+- A streamlined interface keeps **older children** focused — no clutter, no unnecessary steps.
+- The goal: make it easy to log in, mark chores complete, and see rewards without frustration.
+
+### Reward System: ParlaBucks
+- ParlaChore uses a **virtual reward system** called *ParlaBucks*.
+- ParlaBucks are **not real currency** — they’re a fun, symbolic way for kids to track progress and anticipate rewards.
+- Parents decide how ParlaBucks translate into real‑world recognition, whether that’s extra screen time, a family outing, or even allowance.
+- This keeps the app focused on **motivation and accountability**, while leaving financial decisions entirely up to families.
+
+---
+
 # ⚙️ Tech Stack & Control Flow
 
 ## Tech Stack Overview

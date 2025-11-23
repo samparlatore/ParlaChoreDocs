@@ -29,8 +29,24 @@
 
 ---
 
+### ✨ Differentiating Points
+
+#### Simple, Clean, Intuitive UI
+- Designed to help **younger children** learn typical computer and app conventions in a safe, approachable way.
+- A streamlined interface keeps **older children** focused — no clutter, no unnecessary steps.
+- The goal: make it easy to log in, mark chores complete, and see rewards without frustration.
+
+#### Reward System: ParlaBucks
+- ParlaChore uses a **virtual reward system** called *ParlaBucks*.
+- ParlaBucks are **not real currency** — they’re a fun, symbolic way for kids to track progress and anticipate rewards.
+- Parents decide how ParlaBucks translate into real‑world recognition, whether that’s extra screen time, a family outing, or even allowance.
+- This keeps the app focused on **motivation and accountability**, while leaving financial decisions entirely up to families.
+
+
+---
+
 ## 5. Business Model
-- **Freemium**: Core features free.
+- **Freemium**: Core features free for a time.
 - **Premium**: Advanced themes, analytics dashboards, parental controls.
 - **Partnerships**: Schools, family brands, community groups.
 
