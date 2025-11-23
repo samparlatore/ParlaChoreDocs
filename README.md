@@ -80,6 +80,7 @@ For detailed documentation, see:
 - [Themes](docs/THEMES.md)
 - [Utilities](docs/UTILS.md)
 - [Business Plan](docs/BUSINESSPLAN.md)
+- [Marketing](docs/MARKETING.md)
 
 ---
 
