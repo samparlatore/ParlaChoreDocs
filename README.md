@@ -1,5 +1,7 @@
 ![ParlaChore](images/logo.png)
 
+ParlaChore is a **family-focused chore and relationship app** designed to make household management playful, collaborative, and emotionally resonant.  
+It blends **scalable backend architecture** with **mascot-driven UX** to transform chores into shared experiences.
 # ⚙️ Tech Stack & Control Flow
 
 ## Tech Stack Overview
@@ -77,6 +79,7 @@ For detailed documentation, see:
 - [Deployment](docs/DEPLOYMENT.md)
 - [Themes](docs/THEMES.md)
 - [Utilities](docs/UTILS.md)
+- [Business Plan](docs/BUSINESSPLAN.md)
 
 ---
 
