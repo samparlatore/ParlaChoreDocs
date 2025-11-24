@@ -63,14 +63,16 @@ This structure ensures clean overrides, modular styling, and scalable theming.
 | `settings.css`  | Modular UI styles: `.avatar`, `.modal`, `.panel`, etc. using `var()`    |
 | `overrides.css` | Last-resort tweaks: layout fixes, media queries, or user-specific hacks |
 
----
+
+
 | Section                      | Suggested File     | Notes                                       |
 |------------------------------|--------------------|---------------------------------------------|
 | Global layout & typography   | `base.css`         | Body, main, attribution, alerts, forms      |
 | Reusable UI components       | `base.css`         | Buttons, overlays, scroll-box               |
 | Animated mascot styles       | `components.css`   | Mascot class and keyframes                  |
 | Theme-specific patches       | `overrides.css`    | Only if needed for layout fixes             |
----
+
+
 
 | Section                          | Suggested File     | Notes                                           |
 |----------------------------------|--------------------|-------------------------------------------------|
@@ -78,7 +80,7 @@ This structure ensures clean overrides, modular styling, and scalable theming.
 | Mascot styles & animations       | `components.css`   | Timmy-specific positioning and hover effects     |
 | Theme-specific patches           | `overrides.css`    | Only if needed for layout or media query tweaks |
 
----
+
 
 | Section                          | Suggested File     | Notes                                           |
 |----------------------------------|--------------------|-------------------------------------------------|
@@ -86,7 +88,7 @@ This structure ensures clean overrides, modular styling, and scalable theming.
 | Reusable UI components           | `base.css`         | Buttons, overlays, modals, scroll-box           |
 | ParlaPal dashboard & avatars     | `components.css`   | List panels, preview panels, avatars, badges    |
 | Theme-specific patches           | `overrides.css`    | Reserved for layout fixes or media queries      |
----
+
 
 
 ## 👥 Author & Links
