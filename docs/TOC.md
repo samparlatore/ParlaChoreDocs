@@ -2,30 +2,7 @@
 # 📖 ParlaChore Documentation Index
 
 ## README.md
-- [About ParlaChore](/README.md#about-parlachore)
-- [❓ Why ParlaChore?](/README.md#-why-parlachore)
-    - [Simple, Clean, Intuitive UI](/README.md#simple-clean-intuitive-ui)
-    - [Reward System: ParlaBucks](/README.md#reward-system-parlabucks)
-- [⚙️ Tech Stack & Control Flow](/README.md#️-tech-stack--control-flow)
-    - [Tech Stack Overview](/README.md#tech-stack-overview)
-    - [Request → Response → Swapper → Animation Lifecycle](/README.md#-request--response--swapper--animation-lifecycle)
-- [🧱 Architecture & Design](/README.md#-architecture--design)
-    - [Domain Modeling](/README.md#domain-modeling)
-    - [Config-Driven Setup](/README.md#config-driven-setup)
-    - [Secure Account Flow](/README.md#secure-account-flow)
-- [🧪 Testing & DevOps](/README.md#-testing--devops)
-- [🎨 Theme Families (Condensed)](/README.md#-theme-families-condensed)
-- [🏆 Skills Demonstrated](/README.md#-skills-demonstrated)
-    - [Backend & Architecture](/README.md#backend--architecture)
-    - [Security & Reliability](/README.md#security--reliability)
-    - [Frontend & UX](/README.md#frontend--ux)
-    - [DevOps & Deployment](/README.md#devops--deployment)
-    - [Utilities & Tooling](/README.md#utilities--tooling)
-    - [Creative & Collaborative](/README.md#creative--collaborative)
-- [👋 About Me](/README.md#-about-me)
-    - [What I Bring](/README.md#what-i-bring)
-    - [Connect With Me](/README.md#connect-with-me)
-- [📌 Portfolio Note](/README.md#-portfolio-note)
+- [Back to README.md](../README.md#about-parlachore)
 
 ---
 
@@ -201,4 +178,30 @@
     - [Why this matters](/YAMLBINDING.md#why-this-matters)
 - [👥 Author & Links](/YAMLBINDING.md#-author--links)
 
+---
+## README.md
+- [About ParlaChore](../README.md#about-parlachore)
+- [❓ Why ParlaChore?](../README.md#-why-parlachore)
+    - [Simple, Clean, Intuitive UI](../README.md#simple-clean-intuitive-ui)
+    - [Reward System: ParlaBucks](../README.md#reward-system-parlabucks)
+- [⚙️ Tech Stack & Control Flow](../README.md#️-tech-stack--control-flow)
+    - [Tech Stack Overview](../README.md#tech-stack-overview)
+    - [Request → Response → Swapper → Animation Lifecycle](../README.md#-request--response--swapper--animation-lifecycle)
+- [🧱 Architecture & Design](../README.md#-architecture--design)
+    - [Domain Modeling](../README.md#domain-modeling)
+    - [Config-Driven Setup](../README.md#config-driven-setup)
+    - [Secure Account Flow](../README.md#secure-account-flow)
+- [🧪 Testing & DevOps](../README.md#-testing--devops)
+- [🎨 Theme Families (Condensed)](../README.md#-theme-families-condensed)
+- [🏆 Skills Demonstrated](../README.md#-skills-demonstrated)
+    - [Backend & Architecture](../README.md#backend--architecture)
+    - [Security & Reliability](../README.md#security--reliability)
+    - [Frontend & UX](../README.md#frontend--ux)
+    - [DevOps & Deployment](../README.md#devops--deployment)
+    - [Utilities & Tooling](../README.md#utilities--tooling)
+    - [Creative & Collaborative](../README.md#creative--collaborative)
+- [👋 About Me](../README.md#-about-me)
+    - [What I Bring](../README.md#what-i-bring)
+    - [Connect With Me](../README.md#connect-with-me)
+- [📌 Portfolio Note](../README.md#-portfolio-note)
 ---
