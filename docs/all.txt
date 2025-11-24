@@ -1,0 +1,252 @@
+
+
+THEMES.md
+# 🎨 ParlaChore Themes
+
+Our UI ships with a fully modular theming engine: over 40 CSS variables define backgrounds, layout, and mascot styling, all scoped per theme. Each theme overrides only what it needs, while unused styles are automatically purged via PostCSS for lean, lightning‑fast delivery. This approach ensures expressive customization without sacrificing performance — whether you’re swapping palettes, adjusting radii, or giving mascots their own glow, every detail is declarative, reusable, and optimized.
+
+
+ParlaChore supports multiple **theme families** to make the app playful, customizable, and emotionally resonant.
+Each theme includes background images, mascot avatars, and a suggested color palette.
+
+---
+
+## 🌊 Undersea
+- **Backgrounds**: `/images/themes/undersea/backgrounds/undersea-bg1.png` … `undersea-bg4.png`
+- **Avatars**: coralGoby.png, mandrinGoby.png, redEye.png, timmy.png
+- **Palette**: Aqua, teal, coral, seafoam
+
+## ✈️ Airport
+- **Backgrounds**: `/images/themes/airPort/backgrounds/airPort-bg1.png`
+- **Avatars**: luggage, sky mascots
+- **Palette**: Sky blue, tarmac gray, luggage tan
+
+## 🌌 Outer Space
+- **Backgrounds**: outerSpace-bg1.png … outerSpace-bg6.png
+- **Avatars**: cosmic mascots
+- **Palette**: Midnight blue, starlight white, cosmic purple
+
+## 🏗 Build Site
+- **Backgrounds**: buildSite-bg1.png
+- **Avatars**: construction mascots
+- **Palette**: Safety yellow, concrete gray, orange stripe
+
+## 🏇 Race Track
+- **Backgrounds**: raceTrack-bg1.png … raceTrack-bg4.png
+- **Avatars**: racing mascots
+- **Palette**: Asphalt black, racing red, checkered white
+
+## 🐉 Dragon Cliffs
+- **Backgrounds**: dragonCliffs-bg1.png
+- **Avatars**: dragon mascots
+- **Palette**: Charcoal, ember red, smoky violet
+
+## 🧚 Fairy Forest
+- **Backgrounds**: fairyForest-bg1.png
+- **Avatars**: fairy mascots
+- **Palette**: Lavender, moss green, sparkle pink
+
+## 🐱 Cat’s Den
+- **Backgrounds**: catsDen-bg1.png
+- **Avatars**: cat mascots
+- **Palette**: Cream, tabby orange, cozy gray
+
+## 🐶 Dog Pen
+- **Backgrounds**: dogPen-bg1.png
+- **Avatars**: dog mascots
+- **Palette**: Biscuit beige, leash red, kennel blue
+
+## 🐴 Stables
+- **Backgrounds**: stable-bg1.png
+- **Avatars**: horse mascots
+- **Palette**: Saddle brown, hay gold, forest green
+
+---
+
+## 📌 Notes
+- Themes are stored under `/resources/static/images/themes/{family}/`.
+- Each theme includes **avatars** (mascots) and **backgrounds** for immersive UX.
+- Mascot-driven error handling ties into themes for playful recovery.
+
+
+
+---
+
+### ⚙️ Core Frameworks & Libraries
+- **PostCSS** → The engine that transforms the CSS. It parses styles into an abstract syntax tree, applies plugins, and outputs optimized CSS.
+- **PostCSS Plugins** → Modular add‑ons that do the heavy lifting:
+    - `postcss-preset-env` → Allows modern CSS features safely by transpiling them for older browsers.
+    - `autoprefixer` → Automatically adds vendor prefixes for cross‑browser compatibility.
+    - `cssnano` → Minifies and optimizes CSS for production builds.
+    - Utility packs like `postcss-utilities` or `rucksack` can add mixins, shortcuts, and helpers.
+- **postcss-loader** → The Webpack bridge that runs PostCSS on the styles during bundling.
+- **Webpack** → The bundler that ties everything together, ensuring CSS variables and theme overrides are compiled, purged, and shipped efficiently.
+
+---
+
+### 🖌️ How these technologies benefit the Theme Loader
+- **CSS Variables (`--bg-color`, `--accent-color`)** → Declarative theming, scoped per theme.
+- **PostCSS Purge** → Removes unused CSS, keeping payloads lean.
+- **Webpack + postcss-loader** → Ensures themes are processed at build time, so `themes.css` stays modular but compiles down to fast, production‑ready assets.
+- **Plugins like cssnano** → Guarantee that even with 40+ theme variables, the final CSS is compact and performant.
+
+---
+
+
+---
+## 👥 Author & Links
+Created by [Sam Parlatore](https://linkedin.com/in/projectswithsam)
+GitHub: [github.com/samparlatore](https://github.com/samparlatore)
+---\n\n
+\n\n
+UTILS.md
+
+# 🛠 ParlaChore Utilities
+
+This document catalogs the **utility classes and helper functions** that support ParlaChore’s core architecture.  
+They provide reusable building blocks for security, logging, and data handling.
+
+---
+
+## 🔧 Utility Classes
+
+### HtmlSanitizer
+- **Purpose**: Prevents XSS by sanitizing user-submitted HTML.
+- **Usage**: Applied to feedback forms, chore descriptions, and any rich text input.
+- **Example**:
+  ```java
+  String safeHtml = HtmlSanitizer.clean(userInput);
+  ```
+
+### TokenUtils
+- **Purpose**: Generates and validates secure tokens for sessions, email verification, and invite flows.
+- **Usage**: Used in `/verify-email` and planned invite-token features.
+- **Example**:
+  ```java
+  String token = TokenUtils.generate(accountId);
+  boolean valid = TokenUtils.validate(token);
+  ```
+
+### LogUtils
+- **Purpose**: Transparent lifecycle logging for requests, responses, and animations.
+- **Usage**: Debug flags toggle visibility; logs written to `/logs/`.
+- **Example**:
+  ```java
+  LogUtils.debug("Overlay swap complete for page: " + pageId);
+  ```
+
+### DateTimeUtils
+- **Purpose**: Consistent time handling across services.
+- **Usage**: Scheduling chores, reward expiration, audit logging.
+- **Example**:
+  ```java
+  LocalDateTime now = DateTimeUtils.nowUtc();
+  ```
+
+### IPUtils
+- **Purpose**: Detects suspicious activity and supports rate-limiting.
+- **Usage**: Login attempt tracking, fraud prevention.
+- **Example**:
+  ```java
+  String ip = IPUtils.getClientIp(request);
+  ```
+
+### JsonUtils
+- **Purpose**: Simplifies JSON serialization/deserialization.
+- **Usage**: API responses, settings payloads.
+- **Example**:
+  ```java
+  String json = JsonUtils.toJson(accountSettings);
+  ```
+
+### Timer
+- **Purpose**: Lightweight performance measurement.
+- **Usage**: Debugging slow endpoints or animations.
+- **Example**:
+  ```java
+  Timer t = new Timer();
+  t.start();
+  // ... code ...
+  t.stopAndLog("ChoreService execution");
+  ```
+
+---
+
+## 📌 Notes
+
+- Utilities are designed to be **modular, reusable, and future-proof**.
+- They embody the philosophy of building a **toolbox of gems** for maintainability and legitimacy.
+- Each utility supports both **technical purity** and **playful UX** by keeping the core codebase lean.
+
+---
+## 👥 Author & Links
+Created by [Sam Parlatore](https://linkedin.com/in/projectswithsam)  
+GitHub: [github.com/samparlatore](https://github.com/samparlatore)
+---
+\n\n
+\n\n
+YAMLBINDING.md
+## 🔗 Configuration Binding Overview
+
+Spring Boot automatically binds `application.yml` keys under the `parlachore` prefix into the `ParlaChoreConfigDTO` bean. Hyphenated YAML keys map to camelCase Java fields.
+
+### YAML → DTO Mapping
+
+| YAML Key                        | Java Field                  | Type                        | Notes                                                                 |
+|---------------------------------|-----------------------------|-----------------------------|-----------------------------------------------------------------------|
+| `parlachore.allowed-partial-pages` | `allowedPartialPages`        | `List<String>`              | List of allowed partial templates for AJAX swapper.                   |
+| `parlachore.nav-config.items`      | `navConfig`                  | `Map<String, NavItemDTO>`   | Map of navigation items keyed by identifier (`nav1`, `nav2`, …).      |
+| `parlachore.nav-config.items.navX.name` | `NavItemDTO.name`          | `String`                    | Display name for the nav item.                                        |
+| `parlachore.nav-config.items.navX.url`  | `NavItemDTO.url`           | `String`                    | URL path for the nav item.                                            |
+| `parlachore.nav-config.items.navX.visibility` | `NavItemDTO.visibility` | `List<Integer>`             | Visibility codes (e.g. `1=anonymous`, `2=logged-in`, `3=admin`).      |
+
+
+### Example
+
+```yaml
+parlachore:
+  allowed-partial-pages:
+    - login
+    - logout
+    - price
+  nav-config:
+    items:
+      nav1:
+        name: Home
+        url: /index
+        visibility: [1,2,3]
+      nav2:
+        name: Login
+        url: /login
+        visibility: [1]
+```
+
+Binds into:
+
+```java
+config.getAllowedPartialPages(); // ["login","logout","price"]
+
+config.getNavConfig().get("nav1").getName(); // "Home"
+config.getNavConfig().get("nav1").getUrl();  // "/index"
+config.getNavConfig().get("nav1").getVisibility(); // [1,2,3]
+```
+
+---
+
+### Why this matters
+- **Hyphenated YAML keys** (`allowed-partial-pages`) are automatically converted to camelCase (`allowedPartialPages`) by Spring Boot’s relaxed binding rules.
+- **One DTO** (`ParlaChoreConfigDTO`) cleanly holds both navigation and partials config.
+- **Controllers** can inject the same bean and use whichever part they need.
+
+---
+
+
+---
+## 👥 Author & Links
+Created by [Sam Parlatore](https://linkedin.com/in/projectswithsam)  
+GitHub: [github.com/samparlatore](https://github.com/samparlatore)
+---
+\n\n
+\n\n
+all.txt
+\n\n

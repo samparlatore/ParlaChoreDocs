@@ -364,13 +364,6 @@ public class ParlaChoreConfigDTO implements Serializable {
 ```
 
 ---
-
-This way, you’re showing off **tooling mastery** (Lombok + Jackson), **clean code practices**, and **production awareness** — all recruiter‑friendly.
-
-Want me to also phrase this section as a **“would like to” aspiration** (like *“I would like to extend DTOs with validation annotations and richer metadata for API clients”*) so it matches the forward‑looking tone of your monitoring/config sections?
-
-
----
 ## 👥 Author & Links
 Created by [Sam Parlatore](https://linkedin.com/in/projectswithsam)  
 GitHub: [github.com/samparlatore](https://github.com/samparlatore)

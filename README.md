@@ -1,7 +1,213 @@
 ![ParlaChore](images/logo.png)
 
-ParlaChore is a **family chore and relationship app** that turns everyday routines into joyful, collaborative experiences.  
-It combines **scalable backend engineering** with a **clean, mascot‑driven interface** so kids learn intuitive UI conventions, parents stay in control, and families celebrate progress together.
+## About ParlaChore
+ParlaChore is a family chore and relationship app designed to turn everyday routines into joyful, collaborative experiences. It’s more than a task list — it’s a way for households to share responsibility, celebrate progress, and build small moments of connection that add up to something bigger.
+
+Built with love by Sam and the ParlaPals — a whimsical crew of animated helpers — ParlaChore believes that chores can be playful, and that relationships deserve care. Kids learn intuitive UI conventions, parents stay in control, and families discover that teamwork can sparkle.
+
+Whether you’re navigating the chaos of daily life or trying to reconnect with the people you love, ParlaChore offers gentle nudges, clear roles, and a little magic to make it easier. By turning chores into shared goals, it helps sculpt youngsters into confident, responsible people — and gives families a way to celebrate the everyday wins together.
+
+---
+
+# 📖 ParlaChore Documentation Index
+
+## README.md
+- [About ParlaChore](README.md#about-parlachore)
+- [❓ Why ParlaChore?](README.md#-why-parlachore)
+  - [Simple, Clean, Intuitive UI](README.md#simple-clean-intuitive-ui)
+  - [Reward System: ParlaBucks](README.md#reward-system-parlabucks)
+- [⚙️ Tech Stack & Control Flow](README.md#️-tech-stack--control-flow)
+  - [Tech Stack Overview](README.md#tech-stack-overview)
+  - [Request → Response → Swapper → Animation Lifecycle](README.md#-request--response--swapper--animation-lifecycle)
+- [🧱 Architecture & Design](README.md#-architecture--design)
+  - [Domain Modeling](README.md#domain-modeling)
+  - [Config-Driven Setup](README.md#config-driven-setup)
+  - [Secure Account Flow](README.md#secure-account-flow)
+- [🧪 Testing & DevOps](README.md#-testing--devops)
+- [🎨 Theme Families (Condensed)](README.md#-theme-families-condensed)
+- [🏆 Skills Demonstrated](README.md#-skills-demonstrated)
+  - [Backend & Architecture](README.md#backend--architecture)
+  - [Security & Reliability](README.md#security--reliability)
+  - [Frontend & UX](README.md#frontend--ux)
+  - [DevOps & Deployment](README.md#devops--deployment)
+  - [Utilities & Tooling](README.md#utilities--tooling)
+  - [Creative & Collaborative](README.md#creative--collaborative)
+- [👋 About Me](README.md#-about-me)
+  - [What I Bring](README.md#what-i-bring)
+  - [Connect With Me](README.md#connect-with-me)
+- [📌 Portfolio Note](README.md#-portfolio-note)
+
+---
+
+## ARCHITECTURE.md
+- [🧱 ParlaChore Architecture](ARCHITECTURE.md#-parlachore-architecture)
+- [📂 Project Structure](ARCHITECTURE.md#-project-structure)
+- [🌐 Controller Mappings](ARCHITECTURE.md#-controller-mappings)
+  - [ChoreController](ARCHITECTURE.md#chorecontroller)
+  - [DashboardController](ARCHITECTURE.md#dashboardcontroller)
+  - [LandingController](ARCHITECTURE.md#landingcontroller)
+  - [SettingsController](ARCHITECTURE.md#settingscontroller)
+- [🔄 Control Flow](ARCHITECTURE.md#-control-flow)
+- [🛠 Utilities](ARCHITECTURE.md#-utilities)
+- [🎨 Resources](ARCHITECTURE.md#-resources)
+- [📌 Notes](ARCHITECTURE.md#-notes)
+- [👥 Author & Links](ARCHITECTURE.md#-author--links)
+
+---
+
+## AVATARS.md
+- [🧠 Avatar Prompt Examples](AVATARS.md#-avatar-prompt-examples)
+  - [🐠 Undersea Theme (Timmy & Friends)](AVATARS.md#-undersea-theme-timmy--friends)
+  - [🏁 Race Track Theme (Speedy Crew)](AVATARS.md#-race-track-theme-speedy-crew)
+- [👥 Author & Links](AVATARS.md#-author--links)
+
+---
+
+## BUSINESSPLAN.md
+- [📑 ParlaChore Business Plan](BUSINESSPLAN.md#-parlachore-business-plan)
+- [1. Executive Summary](BUSINESSPLAN.md#1-executive-summary)
+- [2. Problem Statement](BUSINESSPLAN.md#2-problem-statement)
+- [3. Solution](BUSINESSPLAN.md#3-solution)
+- [4. Market Analysis](BUSINESSPLAN.md#4-market-analysis)
+- [5. Business Model](BUSINESSPLAN.md#5-business-model)
+- [6. Go-to-Market Strategy](BUSINESSPLAN.md#6-go-to-market-strategy)
+- [7. Operations & Team](BUSINESSPLAN.md#7-operations--team)
+- [8. Financial Plan](BUSINESSPLAN.md#8-financial-plan)
+- [9. Risk Analysis](BUSINESSPLAN.md#9-risk-analysis)
+- [10. Conclusion](BUSINESSPLAN.md#10-conclusion)
+- [👥 Author & Links](BUSINESSPLAN.md#-author--links)
+
+---
+
+## CODESAMPLES.md
+- [ParlaChore code samples](CODESAMPLES.md#parlachore-code-samples)
+- [🚀 Basic Server Setup](CODESAMPLES.md#-basic-server-setup)
+- [🔐 SSL Server Setup](CODESAMPLES.md#-ssl-server-setup)
+- [📈 Monitoring & Metrics](CODESAMPLES.md#-monitoring--metrics)
+- [🧩 Overlay Swapper (Frontend)](CODESAMPLES.md#-overlay-swapper-frontend)
+- [🌐 Controller Endpoint (Backend)](CODESAMPLES.md#-controller-endpoint-backend)
+- [🎨 Theme Loader](CODESAMPLES.md#-theme-loader)
+- [🪵 Logging](CODESAMPLES.md#-logging)
+  - [📜 Logback Configuration](CODESAMPLES.md#-logback-configuration)
+  - [🗒️ Core Logging Configurations](CODESAMPLES.md#-core-logging-configurations)
+- [🛡️ Debug Flags](CODESAMPLES.md#-debug-flags)
+
+---
+
+## CONFIGURATION.md
+- [⚙️ Dynamic Configuration](CONFIGURATION.md#️-dynamic-configuration)
+  - [🛠️ Application configuration](CONFIGURATION.md#️-application-configuration)
+  - [🌱 Spring & Hibernate Configuration](CONFIGURATION.md#-spring--hibernate-configuration)
+- [🧭 Kotlin Enums](CONFIGURATION.md#-kotlin-enums)
+- [📦 Lombok & Jackson for DTO Management & Serialization](CONFIGURATION.md#-lombok--jackson-for-dto-management--serialization)
+
+---
+
+## DEPLOYMENT.md
+- [🚀 ParlaChore Deployment](DEPLOYMENT.md#-parlachore-deployment)
+- [🌐 Hosting & Infrastructure](DEPLOYMENT.md#-hosting--infrastructure)
+- [⚙️ Environment Configuration](DEPLOYMENT.md#️-environment-configuration)
+- [🔄 Deployment Flow](DEPLOYMENT.md#-deployment-flow)
+- [🧪 DevOps Practices](DEPLOYMENT.md#-devops-practices)
+- [📌 Notes](DEPLOYMENT.md#-notes)
+- [👥 Author & Links](DEPLOYMENT.md#-author--links)
+
+---
+
+## MARKETING.md
+- [🎤 ParlaChore Marketing Outline](MARKETING.md#-parlachore-marketing-outline)
+- [1. Hook (30 seconds)](MARKETING.md#1-hook-30-seconds)
+- [2. Problem](MARKETING.md#2-problem)
+- [3. Solution](MARKETING.md#3-solution)
+- [4. Market](MARKETING.md#4-market)
+  - [✨ Differentiating Points](MARKETING.md#-differentiating-points)
+    - [Simple, Clean, Intuitive UI](MARKETING.md#simple-clean-intuitive-ui)
+    - [Reward System: ParlaBucks](MARKETING.md#reward-system-parlabucks)
+- [5. Business Model](MARKETING.md#5-business-model)
+- [6. Traction / Roadmap](MARKETING.md#6-traction--roadmap)
+- [7. Team](MARKETING.md#7-team)
+- [8. Closing](MARKETING.md#8-closing)
+- [🔑 Pitch Tips](MARKETING.md#-pitch-tips)
+- [👥 Author & Links](MARKETING.md#-author--links)
+
+---
+
+## ROADMAP.md
+- [🗺️ Roadmap](ROADMAP.md#️-roadmap)
+  - [✅ Completed Foundations](ROADMAP.md#-completed-foundations)
+  - [🚧 In Progress](ROADMAP.md#-in-progress)
+  - [🌟 Would Like To](ROADMAP.md#-would-like-to)
+- [👥 Author & Links](ROADMAP.md#-author--links)
+
+---
+
+## SECURITY.md
+- [🔐 ParlaChore Security](SECURITY.md#-parlachore-security)
+- [🛡️ Current Security Practices](SECURITY.md#-current-security-practices)
+  - [Authentication & Authorization](SECURITY.md#authentication--authorization)
+  - [Account Lifecycle](SECURITY.md#account-lifecycle)
+  - [Input & Data Protection](SECURITY.md#input--data-protection)
+- [🔒 Planned Enhancements](SECURITY.md#-planned-enhancements)
+  - [Account Security](SECURITY.md#account-security)
+  - [Authentication Improvements](SECURITY.md#authentication-improvements)
+  - [Infrastructure](SECURITY.md#infrastructure)
+- [📌 Notes](SECURITY.md#-notes)
+- [👥 Author & Links](SECURITY.md#-author--links)
+
+---
+
+## STATICASSETS.md
+- [🖼️ ParlaChore Static Assets](STATICASSETS.md#-parlachore-static-assets)
+    - [🎨 Theme Backgrounds](STATICASSETS.md#-theme-backgrounds)
+    - [🐠 ParlaPal Avatars](STATICASSETS.md#-parlapal-avatars)
+    - [🧩 UI Icons & Decorative Elements](STATICASSETS.md#-ui-icons--decorative-elements)
+- [🧼 ParlaChore CSS Load Order](STATICASSETS.md#-parlachore-css-load-order)
+    - [✅ Load Order](STATICASSETS.md#-load-order)
+- [📦 CSS File Purposes](STATICASSETS.md#-css-file-purposes)
+- [👥 Author & Links](STATICASSETS.md#-author--links)
+
+---
+
+## THEMES.md
+- [🎨 ParlaChore Themes](THEMES.md#-parlachore-themes)
+- [🌊 Undersea](THEMES.md#-undersea)
+- [✈️ Airport](THEMES.md#️-airport)
+- [🌌 Outer Space](THEMES.md#-outer-space)
+- [🏗 Build Site](THEMES.md#-build-site)
+- [🏇 Race Track](THEMES.md#-race-track)
+- [🐉 Dragon Cliffs](THEMES.md#-dragon-cliffs)
+- [🧚 Fairy Forest](THEMES.md#-fairy-forest)
+- [🐱 Cat’s Den](THEMES.md#-cats-den)
+- [🐶 Dog Pen](THEMES.md#-dog-pen)
+- [🐴 Stables](THEMES.md#-stables)
+- [📌 Notes](THEMES.md#-notes)
+- [⚙️ Core Frameworks & Libraries](THEMES.md#️-core-frameworks--libraries)
+- [🖌️ How these technologies benefit the Theme Loader](THEMES.md#-how-these-technologies-benefit-the-theme-loader)
+- [👥 Author & Links](THEMES.md#-author--links)
+
+---
+
+## UTILS.md
+- [🛠 ParlaChore Utilities](UTILS.md#-parlachore-utilities)
+- [🔧 Utility Classes](UTILS.md#-utility-classes)
+    - [HtmlSanitizer](UTILS.md#htmlsanitizer)
+    - [TokenUtils](UTILS.md#tokenutils)
+    - [LogUtils](UTILS.md#logutils)
+    - [DateTimeUtils](UTILS.md#datetimeutils)
+    - [IPUtils](UTILS.md#iputils)
+    - [JsonUtils](UTILS.md#jsonutils)
+    - [Timer](UTILS.md#timer)
+- [📌 Notes](UTILS.md#-notes)
+- [👥 Author & Links](UTILS.md#-author--links)
+
+---
+
+## YAMLBINDING.md
+- [🔗 Configuration Binding Overview](YAMLBINDING.md#-configuration-binding-overview)
+    - [YAML → DTO Mapping](YAMLBINDING.md#yaml--dto-mapping)
+    - [Example](YAMLBINDING.md#example)
+    - [Why this matters](YAMLBINDING.md#why-this-matters)
+- [👥 Author & Links](YAMLBINDING.md#-author--links)
 
 ---
 
@@ -26,12 +232,7 @@ It combines **scalable backend engineering** with a **clean, mascot‑driven int
 - Parents decide how ParlaBucks translate into real‑world recognition, whether that’s extra screen time, a family outing, or even allowance.
 - This keeps the app focused on **motivation and accountability**, while leaving financial decisions entirely up to families.
 
-### Reward system: ParlaBucks
-ParlaChore uses a **virtual reward system** called ParlaBucks.  
-ParlaBucks are **not money** — they’re a symbolic way to track progress and celebrate completion.  
-Parents choose how ParlaBucks translate into real‑world recognition (screen time, outings, allowance).
 ---
-
 # ⚙️ Tech Stack & Control Flow
 
 ## Tech Stack Overview
@@ -97,26 +298,6 @@ Themes are stored under `/resources/static/images/themes/` with avatars and back
 
 ---
 
-## 📌 Note
-This documentation is released publicly to demonstrate **system design and architectural thinking**.  
-The codebase itself remains private, but the principles here reflect production-ready practices.
-
----
-
-For detailed documentation, see:
-- [Architecture](docs/ARCHITECTURE.md)
-- [Security](docs/SECURITY.md)
-- [Deployment](docs/DEPLOYMENT.md)
-- [Themes](docs/THEMES.md)
-- [Utilities](docs/UTILS.md)
-- [Code Samples](docs/CODESAMPLES.md)
-- [YAML Binding](docs/YAMLBINDING.md)
-- [Business Plan](docs/BUSINESSPLAN.md)
-- [Marketing](docs/MARKETING.md)
-- [Roadmap](docs/ROADMAP.md)
-
----
-
 ## 🏆 Skills Demonstrated
 
 ParlaChore showcases a blend of **technical engineering** and **creative UX design**.  
@@ -153,12 +334,17 @@ Key skills highlighted through this project include:
 - **Collaboration** — Transparent logging and lifecycle checklists designed for team handoffs.
 
 ---
-
-## 📌 Portfolio Note
-
-This repository is designed to demonstrate **system design, security awareness, deployment readiness, and creative UX thinking**.  
-While the codebase remains private, the documentation reflects production-ready practices and résumé-level skills.
-
+For detailed documentation, see:
+- [Architecture](docs/ARCHITECTURE.md)
+- [Security](docs/SECURITY.md)
+- [Deployment](docs/DEPLOYMENT.md)
+- [Themes](docs/THEMES.md)
+- [Utilities](docs/UTILS.md)
+- [Code Samples](docs/CODESAMPLES.md)
+- [YAML Binding](docs/YAMLBINDING.md)
+- [Business Plan](docs/BUSINESSPLAN.md)
+- [Marketing](docs/MARKETING.md)
+- [Roadmap](docs/ROADMAP.md)
 
 ---
 
