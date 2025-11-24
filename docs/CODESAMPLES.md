@@ -262,58 +262,6 @@ enum class Role {
 }
 ```
 ---
-# 📦 Lombok & Jackson for DTO Management & Serialization
-The configuration layer uses Lombok to eliminate boilerplate and Jackson to handle JSON serialization, keeping DTOs concise, expressive, and production‑ready. Lombok annotations (, , etc.) generate constructors, getters, setters, and equality logic automatically, while Jackson annotations (, ) ensure clean, predictable JSON output. Together, they provide a declarative, maintainable approach to managing configuration objects — reducing manual code and improving readability without sacrificing flexibility.
-
-```java
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-@Builder(toBuilder = true)
-@EqualsAndHashCode
-@ToString
-@JsonInclude(JsonInclude.Include.NON_NULL)
-@Component
-@ConfigurationProperties(prefix = "parlachore")
-public class ParlaChoreConfigDTO implements Serializable {
-
-    @Serial
-    private static final long serialVersionUID = 1L;
-
-    /** Allowed partial pages for AJAX swapper */
-    @JsonProperty("allowed-partial-pages")
-    private List<String> allowedPartialPages;
-
-    /** Map of nav items keyed by identifier */
-    @JsonProperty("nav-config")
-    private Map<String, NavItemDTO> navConfig;
-
-    @Data
-    @NoArgsConstructor
-    @AllArgsConstructor
-    @Builder(toBuilder = true)
-    @EqualsAndHashCode
-    @ToString
-    @JsonInclude(JsonInclude.Include.NON_NULL)
-    public static class NavItemDTO implements Serializable {
-        @Serial
-        private static final long serialVersionUID = 1L;
-
-        private String name;
-        private String url;
-        private List<Integer> visibility;
-
-        public boolean isVisibleFor(int state) {
-            return visibility != null && visibility.contains(state);
-        }
-    }
-}
-```
----
-
-Here’s a recruiter‑friendly rewrite of that section that keeps the swagger but frames it as **architectural clarity and efficiency** instead of “because why the f*** not”:
-
----
 
 ## 📦 Lombok & Jackson for DTO Management & Serialization
 The configuration layer uses Lombok to eliminate boilerplate and Jackson to handle JSON serialization, keeping DTOs concise, expressive, and production‑ready. Lombok annotations (`@Data`, `@Builder`, etc.) generate constructors, getters, setters, and equality logic automatically, while Jackson annotations (`@JsonProperty`, `@JsonInclude`) ensure clean, predictable JSON output. Together, they provide a declarative, maintainable approach to managing configuration objects — reducing manual code and improving readability without sacrificing flexibility.
