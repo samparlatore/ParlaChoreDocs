@@ -91,15 +91,11 @@ Whether you’re navigating the chaos of daily life or trying to reconnect with 
   - [📜 Logback Configuration](/docs/CODESAMPLES.md#-logback-configuration)
   - [🗒️ Core Logging Configurations](/docs/CODESAMPLES.md#-core-logging-configurations)
 - [🛡️ Debug Flags](/docs/CODESAMPLES.md#-debug-flags)
-
----
-
-## CONFIGURATION.md
-- [⚙️ Dynamic Configuration](/docs/CONFIGURATION.md#️-dynamic-configuration)
-  - [🛠️ Application configuration](/docs/CONFIGURATION.md#️-application-configuration)
-  - [🌱 Spring & Hibernate Configuration](/docs/CONFIGURATION.md#-spring--hibernate-configuration)
-- [🧭 Kotlin Enums](/docs/CONFIGURATION.md#-kotlin-enums)
-- [📦 Lombok & Jackson for DTO Management & Serialization](/docs/CONFIGURATION.md#-lombok--jackson-for-dto-management--serialization)
+- [⚙️ Dynamic Configuration](/docs/CODESAMPLES.md#️-dynamic-configuration)
+  - [🛠️ Application configuration](/docs/CODESAMPLES.md#️-application-configuration)
+  - [🌱 Spring & Hibernate Configuration](/docs/CODESAMPLES.md#-spring--hibernate-configuration)
+- [🧭 Kotlin Enums](/docs/CODESAMPLES.md#-kotlin-enums)
+- [📦 Lombok & Jackson for DTO Management & Serialization](/docs/CODESAMPLES.md#-lombok--jackson-for-dto-management--serialization)
 
 ---
 
