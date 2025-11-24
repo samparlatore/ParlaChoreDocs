@@ -183,6 +183,7 @@ logging:
     com.parlAquatics.parlaChore: DEBUG
 
 ```
+---
 ## 🛡️ Debug Flags
 A centralized set of debug flags provides fine‑grained control over application behavior during development. Each flag toggles a specific aspect of the system — from verbose logging to visual overlays and transition effects — allowing developers to isolate issues without touching production code. This modular approach ensures that debugging remains transparent, configurable, and safe
 ```java
@@ -241,8 +242,7 @@ server:
     key-store-type: PKCS12
     key-store-alias: parlachore
 ```
-
-
+---
 ## 🧭 Kotlin Enums
 Because Kotlin kicks ass at modeling roles cleanly, the application defines its core permissions as an enum class. Each role — ADMIN, APPROVER, DOER, and SUPPORTER — encapsulates its own intent, from account administration to encouragement and tracking. Helper methods like isAdmin(), canApprove(), and canDo() make role checks expressive and type‑safe, eliminating magic strings and keeping business logic readable. This approach ensures that responsibilities are enforced declaratively while keeping the codebase elegant and maintainable.
 
@@ -261,8 +261,7 @@ enum class Role {
     fun isSupporter(): Boolean = this == SUPPORTER
 }
 ```
-
-
+---
 # 📦 Lombok & Jackson for DTO Management & Serialization
 The configuration layer uses Lombok to eliminate boilerplate and Jackson to handle JSON serialization, keeping DTOs concise, expressive, and production‑ready. Lombok annotations (, , etc.) generate constructors, getters, setters, and equality logic automatically, while Jackson annotations (, ) ensure clean, predictable JSON output. Together, they provide a declarative, maintainable approach to managing configuration objects — reducing manual code and improving readability without sacrificing flexibility.
 
@@ -312,6 +311,63 @@ public class ParlaChoreConfigDTO implements Serializable {
 ```
 ---
 
+Here’s a recruiter‑friendly rewrite of that section that keeps the swagger but frames it as **architectural clarity and efficiency** instead of “because why the f*** not”:
+
+---
+
+## 📦 Lombok & Jackson for DTO Management & Serialization
+The configuration layer uses Lombok to eliminate boilerplate and Jackson to handle JSON serialization, keeping DTOs concise, expressive, and production‑ready. Lombok annotations (`@Data`, `@Builder`, etc.) generate constructors, getters, setters, and equality logic automatically, while Jackson annotations (`@JsonProperty`, `@JsonInclude`) ensure clean, predictable JSON output. Together, they provide a declarative, maintainable approach to managing configuration objects — reducing manual code and improving readability without sacrificing flexibility.
+
+```java
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder(toBuilder = true)
+@EqualsAndHashCode
+@ToString
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@Component
+@ConfigurationProperties(prefix = "parlachore")
+public class ParlaChoreConfigDTO implements Serializable {
+
+    @Serial
+    private static final long serialVersionUID = 1L;
+
+    /** Allowed partial pages for AJAX swapper */
+    @JsonProperty("allowed-partial-pages")
+    private List<String> allowedPartialPages;
+
+    /** Map of nav items keyed by identifier */
+    @JsonProperty("nav-config")
+    private Map<String, NavItemDTO> navConfig;
+
+    @Data
+    @NoArgsConstructor
+    @AllArgsConstructor
+    @Builder(toBuilder = true)
+    @EqualsAndHashCode
+    @ToString
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public static class NavItemDTO implements Serializable {
+        @Serial
+        private static final long serialVersionUID = 1L;
+
+        private String name;
+        private String url;
+        private List<Integer> visibility;
+
+        public boolean isVisibleFor(int state) {
+            return visibility != null && visibility.contains(state);
+        }
+    }
+}
+```
+
+---
+
+This way, you’re showing off **tooling mastery** (Lombok + Jackson), **clean code practices**, and **production awareness** — all recruiter‑friendly.
+
+Want me to also phrase this section as a **“would like to” aspiration** (like *“I would like to extend DTOs with validation annotations and richer metadata for API clients”*) so it matches the forward‑looking tone of your monitoring/config sections?
 
 
 ---
