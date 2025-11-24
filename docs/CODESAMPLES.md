@@ -43,7 +43,7 @@ I would like to extend the stack with lightweight health checks and metrics endp
 ---
 ## 🧩 Overlay Swapper (Frontend)
 The Overlay Swapper is a lightweight JavaScript utility that dynamically replaces sections of the DOM with backend‑rendered Thymeleaf fragments. By handling navigation and updates through partial swaps instead of full page reloads, it maintains data obfuscation while delivering a seamless, app‑like user experience. Smooth fade‑in transitions and debug logging ensure both visual polish and developer transparency during content updates.
-```jshelllanguage
+```java
     logDebug("newContent found:", !!newContent, newContent);
     logDebug("content found in current DOM:", !!content, content);
 
@@ -104,7 +104,7 @@ public class PartialController {
 ---
 ## 🎨 Theme Loader
 The theming system is powered by PostCSS and Webpack, with plugins like autoprefixer, cssnano, and postcss‑preset‑env ensuring modern CSS features, automatic vendor prefixing, and production‑grade optimization. Unused styles are purged at build time for maximum performance.
-```yaml
+```css
 /* Themes.css */
 /* Root defaults */
 :root {
@@ -127,7 +127,7 @@ The theming system is powered by PostCSS and Webpack, with plugins like autopref
     --mascot-border: 2px solid var(--accent-color);
 }  
 ```
-```yaml
+```css
 /* Theme: Undersea */
 body[data-theme="undersea"] {
     --theme-name: "Undersea";
@@ -185,7 +185,7 @@ logging:
 ```
 ## 🛡️ Debug Flags
 A centralized set of debug flags provides fine‑grained control over application behavior during development. Each flag toggles a specific aspect of the system — from verbose logging to visual overlays and transition effects — allowing developers to isolate issues without touching production code. This modular approach ensures that debugging remains transparent, configurable, and safe
-```jshelllanguage
+```java
 // config/debug.js
 export const DEBUG = {
     logging: true,
@@ -244,7 +244,7 @@ server:
 
 
 ## 🧭 Kotlin Enums
-Because Kotlin kicks ass at modeling roles cleanly, the application defines its core permissions as an . Each role — , , , and  — encapsulates its own intent, from account administration to encouragement and tracking. Helper methods (, , etc.) make role checks expressive and type‑safe, eliminating magic strings and keeping business logic readable. This approach ensures that responsibilities are enforced declaratively while keeping the codebase elegant and maintainable.
+Because Kotlin kicks ass at modeling roles cleanly, the application defines its core permissions as an enum class. Each role — ADMIN, APPROVER, DOER, and SUPPORTER — encapsulates its own intent, from account administration to encouragement and tracking. Helper methods like isAdmin(), canApprove(), and canDo() make role checks expressive and type‑safe, eliminating magic strings and keeping business logic readable. This approach ensures that responsibilities are enforced declaratively while keeping the codebase elegant and maintainable.
 
 ```java
 package com.parlAquatics.parlaChore.kotlin
