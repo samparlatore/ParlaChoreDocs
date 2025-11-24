@@ -76,3 +76,10 @@
 - Show off your docs: Architecture, Security, Deployment — proof you can scale.
 - Keep it visual: Mascot themes, dashboards, playful UX screenshots.
 - End with confidence: *“We’re ready to grow ParlaChore into the household name for family management.”*
+
+
+---
+## 👥 Author & Links
+Created by [Sam Parlatore](https://linkedin.com/in/projectswithsam)  
+GitHub: [github.com/samparlatore](https://github.com/samparlatore)
+---

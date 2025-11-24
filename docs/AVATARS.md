@@ -21,3 +21,10 @@
 | **Nitro**         | A brainy racetrack strategist with a clipboard, oversized glasses, and a headset. Wearing a racing vest with patches, standing in a control booth with blinking lights. |
 
 ****
+
+
+---
+## 👥 Author & Links
+Created by [Sam Parlatore](https://linkedin.com/in/projectswithsam)  
+GitHub: [github.com/samparlatore](https://github.com/samparlatore)
+---

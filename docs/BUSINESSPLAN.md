@@ -97,3 +97,11 @@ ParlaChore offers:
 ## 10. Conclusion
 ParlaChore is positioned to **redefine family chore management** by combining technical rigor with playful, emotionally resonant design.  
 With a clear roadmap, secure architecture, and engaging UX, it can grow into a trusted household brand.
+
+
+
+---
+## 👥 Author & Links
+Created by [Sam Parlatore](https://linkedin.com/in/projectswithsam)  
+GitHub: [github.com/samparlatore](https://github.com/samparlatore)
+---

@@ -26,6 +26,10 @@ It combines **scalable backend engineering** with a **clean, mascot‑driven int
 - Parents decide how ParlaBucks translate into real‑world recognition, whether that’s extra screen time, a family outing, or even allowance.
 - This keeps the app focused on **motivation and accountability**, while leaving financial decisions entirely up to families.
 
+### Reward system: ParlaBucks
+ParlaChore uses a **virtual reward system** called ParlaBucks.  
+ParlaBucks are **not money** — they’re a symbolic way to track progress and celebrate completion.  
+Parents choose how ParlaBucks translate into real‑world recognition (screen time, outings, allowance).
 ---
 
 # ⚙️ Tech Stack & Control Flow
@@ -105,8 +109,11 @@ For detailed documentation, see:
 - [Deployment](docs/DEPLOYMENT.md)
 - [Themes](docs/THEMES.md)
 - [Utilities](docs/UTILS.md)
+- [Code Samples](docs/CODESAMPLES.md)
+- [YAML Binding](docs/YAMLBINDING.md)
 - [Business Plan](docs/BUSINESSPLAN.md)
 - [Marketing](docs/MARKETING.md)
+- [Roadmap](docs/ROADMAP.md)
 
 ---
 
