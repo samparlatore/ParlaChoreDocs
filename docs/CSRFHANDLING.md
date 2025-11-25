@@ -42,7 +42,7 @@ async function csrfFetch(url, options = {}) {
 
 ---
 
-### ✅ Using it in your script
+### ✅ Using it in the script
 ```js
 document.addEventListener('DOMContentLoaded', async () => {
   if (!window.parlaChoreLoaded) {

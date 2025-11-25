@@ -6,12 +6,13 @@ ParlaChore is a family chore and relationship app designed to turn everyday rout
 Built with love by Sam and the ParlaPals — a whimsical crew of animated helpers — ParlaChore believes that chores can be playful, and that relationships deserve care. Kids learn intuitive UI conventions, parents stay in control, and families discover that teamwork can sparkle.
 
 Whether you’re navigating the chaos of daily life or trying to reconnect with the people you love, ParlaChore offers gentle nudges, clear roles, and a little magic to make it easier. By turning chores into shared goals, it helps sculpt youngsters into confident, responsible people — and gives families a way to celebrate the everyday wins together.
+---
+| [📑 Table of contents](/docs/TOC.md)           | [🖼️ Business Plan](/docs/BUSINESSPLAN.md)                | [📈 Marketing](/docs/MARKETING.md) |
+|:-----------------------------------------------|:---------------------------------------------------------|:-----------------------------------|   
+| [🧩Code Samples](/docs/CODESAMPLES.md)         | [🌐ParlaChore Intro Screens](/docs/INTROSCREENS.md)      |                                    |
+| [🐠ParlaChore vs. SPA](/docs/PARLACHORESPA.md) | [🐉ParlaChore content swapping](/docs/CONTENTSWAPPER.md) |                                    |
+---
 
----
-- [📑 Table of contents](/docs/TOC.md)
-- [🐉ParlaChore content swapping](/docs/CONTENTSWAPPER.md)
-- [🐠ParlaChore vs. SPA](/docs/PARLACHORESPA.md)
----
 
 ## ❓ Why ParlaChore?
 
