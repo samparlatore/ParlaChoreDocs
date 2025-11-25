@@ -9,6 +9,8 @@ Whether you’re navigating the chaos of daily life or trying to reconnect with 
 
 ---
 - [📑 Table of contents](/docs/TOC.md)
+- [🐉ParlaChore content swapping](/docs/CONTENTSWAPPER.md)
+- [🐠ParlaChore vs. SPA](/docs/PARLACHORESPA.md)
 ---
 
 ## ❓ Why ParlaChore?
