@@ -1,4 +1,4 @@
-![ParlaChore](images/logo.png)
+![ParlaChore](../images/logo.png)
 
 ---
 
@@ -8,49 +8,49 @@
 
 ## Index
 
-![ParlaChore](images/index.png)
+![ParlaChore](../images/index.png)
 
 
 ---
 
 ## Approach
 
-![ParlaChore](images/approach.png)
+![ParlaChore](../images/approach.png)
 
 
 ---
 
 ## Privacy
 
-![ParlaChore](images/privacy.png)
+![ParlaChore](../images/privacy.png)
 
 
 ---
 
 ## Terms
 
-![ParlaChore](images/terms.png)
+![ParlaChore](../images/terms.png)
 
 
 ---
 
 ## Price
 
-![ParlaChore](images/price.png)
+![ParlaChore](../images/price.png)
 
 
 ---
 
 ## Login
 
-![ParlaChore](images/login.png)
+![ParlaChore](../images/login.png)
 
 
 ---
 
 ## sam
 
-![ParlaChore](images/samHeadSmall.png)
+![ParlaChore](../images/samHeadSmall.png)
 
 
 
