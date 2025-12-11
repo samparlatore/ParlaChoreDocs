@@ -8,10 +8,12 @@ Built with love by Sam and the ParlaPals — a whimsical crew of animated helper
 Whether you’re navigating the chaos of daily life or trying to reconnect with the people you love, ParlaChore offers gentle nudges, clear roles, and a little magic to make it easier. By turning chores into shared goals, it helps sculpt youngsters into confident, responsible people — and gives families a way to celebrate the everyday wins together.
 
 ---
-| [📑 Table of contents](/docs/TOC.md)  | [🖼️ Business Plan](/docs/BUSINESSPLAN.md) | [📈 Marketing](/docs/MARKETING.md)   |
-|:--------------------------------------|:-------------------------|:-----------------------------|   
-| [🧩Code Samples](/docs/CODESAMPLES.md)         | [🌐ParlaChore Intro Screens](/docs/INTROSCREENS.md)      | [🔗YML binding](/docs/YMLBINDING.md) |
-| [🐠ParlaChore vs. SPA](/docs/PARLACHORESPA.md) | [🐉ParlaChore content swapping](/docs/CONTENTSWAPPER.md) | [🔐 Security](/docs/SECURITY.md)     |
+
+| [📑 Table of contents](/docs/TOC.md) | [🖼️ Business Plan](/docs/BUSINESSPLAN.md) | [📈 Marketing](/docs/MARKETING.md) |
+|:------------------------------------|:------------------------------------------|:----------------------------------|
+| [🧩 Code Samples](/docs/CODESAMPLES.md) | [🌐 ParlaChore Intro Screens](/docs/INTROSCREENS.md) | [🔗 YML binding](/docs/YMLBINDING.md) |
+| [🐠 ParlaChore vs. SPA](/docs/PARLACHORESPA.md) | [🐉 ParlaChore content swapping](/docs/CONTENTSWAPPER.md) | [🔐 Security](/docs/SECURITY.md) |
+
 ---
 
 
